@@ -8,22 +8,65 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
+
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    background: var(--color-black);
+    color: var(--color-gray);
+    position: relative;
+    line-height: 1.5;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+    font-size: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+*:disabled {
+    cursor: not-allowed;
+}
+
+
+ul {
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+a {
+   all: unset 
+}
+
+html {
+  height: 100%;
+  width: 100%;
 }
 
 @layer utilities {

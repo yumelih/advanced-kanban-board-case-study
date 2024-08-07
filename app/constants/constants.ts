@@ -1,0 +1,1 @@
+export const API_PATH = "https://api.management.parse25proje.link"
