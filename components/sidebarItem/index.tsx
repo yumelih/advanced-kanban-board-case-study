@@ -16,7 +16,7 @@ const SidebarItem = ({
     >
       <div className={`h-2 w-2 rounded-full ${color}`}></div>
       <span
-        className={`overflow-hidden transition-all ${expanded ? 'ml-3 w-52' : 'w-0'}`}
+        className={`overflow-hidden transition-all ${expanded ? 'ml-3 w-52' : 'h-8 w-0'}`}
       >
         {text}
       </span>
