@@ -1,5 +1,6 @@
 'use client'
 
+import Navbar from '@/components/Navbar'
 import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 
@@ -19,9 +20,12 @@ const Home = () => {
   }, [])
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      WAR
-    </main>
+    <div className="h-full w-full">
+      <Navbar />
+      <main className="h-[91%] w-full bg-background">
+        <div></div>
+      </main>
+    </div>
   )
 }
 
