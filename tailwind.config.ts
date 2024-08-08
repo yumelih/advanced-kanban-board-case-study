@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         background: '#F3F6FD',
         sidebarBlue: '#363F72',
+        hoverGray: '#667085',
       },
     },
   },

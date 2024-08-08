@@ -6,6 +6,7 @@ import SidebarItem from '@/components/sidebarItem'
 import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 import BellIcon from '../assets/bellIcon'
+import LeftSidebar from '@/components/leftSidebar'
 
 const Home = () => {
   const router = useRouter()
@@ -26,16 +27,7 @@ const Home = () => {
     <div className="h-full w-full">
       <Navbar />
       <main className="flex h-[91%] w-full bg-background">
-        <div className="bg-sidebarBlue flex h-full w-16 flex-col items-center gap-4 py-8">
-          <BellIcon width={30} />
-          <BellIcon width={30} />
-          <BellIcon width={30} />
-          <BellIcon width={30} />
-          <BellIcon width={30} className="mt-auto" />
-          <BellIcon width={30} />
-          <BellIcon width={30} />
-          <BellIcon width={30} />
-        </div>
+        <LeftSidebar />
         <Sidebar>
           <SidebarItem text="Proje İsim 1" color="bg-red-600" active={true} />
           <SidebarItem text="Proje İsim 2" color="bg-blue-600" />
