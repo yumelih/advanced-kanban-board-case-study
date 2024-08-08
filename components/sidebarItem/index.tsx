@@ -28,7 +28,7 @@ const SidebarItem = ({
 
       {!expanded && (
         <div
-          className={`invisible absolute left-full ml-6 -translate-x-3 rounded-md bg-indigo-100 px-2 py-1 text-sm text-indigo-800 opacity-20 transition-all group-hover:visible group-hover:translate-x-0 group-hover:opacity-100`}
+          className={`invisible absolute left-full ml-6 min-w-24 -translate-x-3 rounded-md bg-indigo-100 px-2 py-1 text-sm text-indigo-800 opacity-20 transition-all group-hover:visible group-hover:translate-x-0 group-hover:opacity-100`}
         >
           {text}
         </div>

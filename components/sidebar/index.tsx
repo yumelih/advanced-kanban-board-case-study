@@ -25,9 +25,9 @@ export default function Sidebar({ children }: SidebarProps) {
       .then((res) => {
         console.log(res)
         setUserProfile(res)
-        if (!res.status) {
-          throw res
-        }
+        // if (!res.status) {
+        //   throw res
+        // }
       })
       .catch(() => {
         localStorage.removeItem('user')

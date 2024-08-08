@@ -1,4 +1,4 @@
-import BellIcon from '@/app/assets/bellIcon'
+import BellIcon from '@/assets/bellIcon'
 import Image from 'next/image'
 
 const Navbar = () => {

@@ -1,4 +1,4 @@
-import BellIcon from '@/app/assets/bellIcon'
+import BellIcon from '@/assets/bellIcon'
 import Image from 'next/image'
 
 const LeftSidebarItem = ({ className }: { className?: string }) => {
@@ -13,7 +13,7 @@ const LeftSidebarItem = ({ className }: { className?: string }) => {
 
 const LeftSidebar = () => {
   return (
-    <div className="bg-sidebarBlue flex h-full w-16 flex-col items-center gap-4 pb-4 pt-8">
+    <div className="flex h-full w-16 flex-col items-center gap-4 bg-sidebarBlue pb-4 pt-8">
       <LeftSidebarItem />
       <LeftSidebarItem />
       <LeftSidebarItem />

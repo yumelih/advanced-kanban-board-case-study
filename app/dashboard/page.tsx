@@ -5,8 +5,8 @@ import Sidebar from '@/components/sidebar'
 import SidebarItem from '@/components/sidebarItem'
 import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
-import BellIcon from '../assets/bellIcon'
 import LeftSidebar from '@/components/leftSidebar'
+import KanbanBoard from '@/components/kanban'
 
 const Home = () => {
   const router = useRouter()
@@ -42,7 +42,12 @@ const Home = () => {
             disabled={true}
           />
         </Sidebar>
-        <div></div>
+        <div className="box-border flex flex-col overflow-x-auto overflow-y-hidden p-8">
+          <h1 className="text-2xl font-semibold text-titleBlue">
+            Frontend Case
+          </h1>
+          <KanbanBoard />
+        </div>
       </main>
     </div>
   )
