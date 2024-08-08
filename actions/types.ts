@@ -7,3 +7,12 @@ export interface LoginResponse {
     id: number
   }
 }
+
+export interface ProfileResponse {
+  status: boolean
+  data: {
+    fullName: string
+    email: string
+    id: number
+  }
+}
